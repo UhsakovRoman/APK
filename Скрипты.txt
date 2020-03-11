@@ -1,0 +1,40 @@
+1. Распаковка всех апк по папкам
+2. Применение dexdump ко всем dex файлам внутри
+3. Удаление мусора и слияние java файлов
+-----------
+1. Выполняем 1-ый скрипт:
+ls | while read i; do mkdir ${i%%.apk}; unzip $i -d ${i%%.apk}; mv $i ${i%%.apk}; done
+
+ls | // Вывод списка файлов
+while read i; // Читаем файлы по очереди, имя i
+do 
+mkdir ${i%%.apk}; // Создаем папку с именем i (i у нас равно app.apk, i%%.apk = app)
+unzip $i -d ${i%%.apk}; // Распаковываем апк в папку i
+mv $i ${i%%.apk}; // перемещаем апк в каталог i, его можно убрать наверное для экономии места/ускорения работы
+done 
+
+-----------
+2. Выполняем 2-ой скрипт, опять в том же каталоге test
+ls | while read i;do cd $i; dexdump -h classes.dex > header.txt; dexdump -f classes.dex > header_summury_info.txt; dexdump -g classes.dex > CFG_for_dex.txt; 
+apktool -d $i; androdd -i $i.apk -o ./$i;  cd ..; done;
+
+ls | // Опять выводим список
+while read i; // Читаем все папки с именем i
+do cd $i; // Погружаемся в папку с именем i, внутри распакованный апк, в которым есть манифест, dex и прочее, также там лежит апк
+dexdump -h classes.dex > header.txt; // Применяем команду dexdump и записываем результат в файл header.txt (он создается автоматически)
+dexdump -f classes.dex > header_summury_info.txt;
+dexdump -g classes.dex > CFG_for_dex.txt;
+apktool -d $i;
+androdd -i $i.apk -o ./$i;   // Эту строку надо проверить, не пробовал в цикле делать
+cd ..; // Возвращаемся на один каталог выше, переходя к следующему i
+done; //
+
+-------------
+3. Теперь внутри папки автора нужно удалить все файлы *.ag
+find -name "*.ag" | xargs rm // Удаляет все файлы *.ag из всех каталогов глубже текущего
+find -empty -type d -delete // Удаляет пустые папки из всех каталогов глубже текущего
+find - name "*.java" | xargs cp -t ./java // Копирует (не перемещает) все *.java файлы в папку java (находится рядом со всеми апк автора)
+find - name "*.java" | xargs cat > java.txt // Создает файл java.txt - в нем объеденены все файлы *.java для всех апк глубже текущего каталога (сейчас создан файл со всеми java для одного автора)
+
+-------------
+По-хорошему, надо все объединить в один скрипт
