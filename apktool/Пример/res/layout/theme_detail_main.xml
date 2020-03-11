@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/pref_item_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <home.solo.launcher.free.theme.view.CirclePageIndicator android:id="@id/indicator" android:background="@color/transparent" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fillColor="@color/android_blue" app:pageColor="@color/android_blue" app:mRadius="4.0dip" app:mStrokeWidth="0.0dip" />
+    <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <TextView android:id="@id/line" android:background="@color/android_blue" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/container_downloaded" android:background="@color/actionbar_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/buttonBarStyle">
+        <Button android:id="@id/cancel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@android:string/cancel" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+        <Button android:id="@id/apply" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/gt_pref_theme_apply" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+        <Button android:id="@id/rate" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/gt_pref_theme_rate" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

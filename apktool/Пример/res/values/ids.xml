@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="actionbar_icon" />
+    <item type="id" name="actionbar_title" />
+    <item type="id" name="feature" />
+    <item type="id" name="name" />
+    <item type="id" name="icon_pack" />
+    <item type="id" name="font" />
+    <item type="id" name="skin" />
+    <item type="id" name="wallpaper" />
+    <item type="id" name="info" />
+    <item type="id" name="description" />
+    <item type="id" name="link" />
+    <item type="id" name="indicator" />
+    <item type="id" name="pager" />
+    <item type="id" name="line" />
+    <item type="id" name="container_downloaded" />
+    <item type="id" name="cancel" />
+    <item type="id" name="apply" />
+    <item type="id" name="rate" />
+    <item type="id" name="menu_settings" />
+</resources>

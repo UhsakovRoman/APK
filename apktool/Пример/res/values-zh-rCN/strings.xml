@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hello Kitty</string>
+    <string name="download_launcher">下载Solo桌面</string>
+    <string name="dialogtitle">检查Solo桌面是否安装</string>
+    <string name="dialogcontent">Solo桌面没有安装在你手机上，请按点击确定按钮下载</string>
+    <string name="dialogok">确定</string>
+    <string name="theme_info">"
+版本:V1.0 
+
+开发者:
+DoggyBoy
+
+反馈:
+faceharrybook@gmail.com"</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources> 
+
+  <!--背板-->
+  <iconback img1="iconback"/>  
+  <iconupon img1="iconupon"/> 
+  <!--前板-->
+  <iconupon img1="iconupon"/>
+  <!--图标缩放比例-->
+  <scale factor="0.7"/>  
+  
+  </resources>

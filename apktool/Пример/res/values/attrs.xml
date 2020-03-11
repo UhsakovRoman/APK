@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="selectedFooterLineHeight" format="dimension" />
+    <attr name="selectedFooterLineColor" format="color" />
+    <attr name="vpiCirclePageIndicatorStyle" format="reference" />
+    <attr name="vpiIconPageIndicatorStyle" format="reference" />
+    <attr name="vpiLinePageIndicatorStyle" format="reference" />
+    <attr name="vpiTitlePageIndicatorStyle" format="reference" />
+    <attr name="vpiTabPageIndicatorStyle" format="reference" />
+    <attr name="vpiUnderlinePageIndicatorStyle" format="reference" />
+    <attr name="fillColor" format="reference" />
+    <attr name="pageColor" format="reference" />
+    <attr name="mRadius" format="dimension" />
+    <attr name="snap" format="boolean" />
+    <attr name="mStrokeColor" format="reference" />
+    <attr name="mStrokeWidth" format="dimension" />
+</resources>

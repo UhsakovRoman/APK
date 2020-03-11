@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbar_title_color">#ffffffff</color>
+    <color name="actionbar_bg_color">#ff121122</color>
+    <color name="pref_item_bg_color">#ff1a1831</color>
+    <color name="android_blue">#ff33b5e5</color>
+    <color name="transparent">#00000000</color>
+    <color name="default_circle_indicator_fill_color">#ffffffff</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <color name="default_circle_indicator_stroke_color">#ffdddddd</color>
+</resources>

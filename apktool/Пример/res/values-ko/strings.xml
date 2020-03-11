@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hello Kitty</string>
+    <string name="dialogtitle">확인 Solo Launcher Free</string>
+    <string name="dialogcontent">Solo Launcher Free 휴대 전화에 설치되지 않은 것입니다, 그것을 다운로드 확인을 눌러 주시기 바랍니다</string>
+    <string name="dialogok">OK</string>
+    <string name="theme_info">"Hello Kitty
+
+Version:V1.0 
+
+Developer:
+DoggyBoy 
+
+Feedback:
+faceharrybook@gmail.com"</string>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">hello Kitty Theme Cracked</string>
+    <string name="download_launcher">Download Solo Launcher</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_theme_detail_main">MainActivity</string>
+    <string name="dialogtitle">Checking Solo Launcher</string>
+    <string name="dialogcontent">Solo Launcher is not installed in your phone, please press OK to download it</string>
+    <string name="dialogok">OK</string>
+    <string name="theme_title">hello Kitty Theme Cracked</string>
+    <string name="theme_info">"hello Kitty Theme Cracked
+Version:V1.0 
+
+Developer:
+DoggyBoy
+
+Feedback:
+faceharrybook@gmail.com"</string>
+    <string name="gt_pref_theme">Solo Themes</string>
+    <string name="gt_pref_theme_rate">Rate</string>
+    <string name="gt_pref_theme_apply">Apply</string>
+    <string name="gt_pref_theme_get_themes">Get themes</string>
+    <string name="gt_pref_theme_iconpack">Icon Pack</string>
+    <string name="gt_pref_theme_skin">Skin</string>
+    <string name="gt_pref_theme_font">Font</string>
+    <string name="gt_pref_theme_wallpaper">Wallpaper</string>
+    <string name="waiting">Applying...</string>
+    <string name="market_not_found">Market not found!</string>
+    <string name="theme_feature">theme_feature</string>
+    <string name="theme_preview1">theme_preview1</string>
+    <string name="theme_preview2">theme_preview2</string>
+    <string name="theme_preview3">theme_preview3</string>
+</resources>
