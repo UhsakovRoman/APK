@@ -1,1 +1,12 @@
-1
+Установка:
+sudo apt-get install androguard python-networkx
+
+Для чего используется:
+Достаем исходный java код
+
+
+Синтаксис, пока что используем для apk:
+androdd -i app.apk -o ./dir-for-output // Извлечь classes.dex из Apk + Decompile:
+androdd -i classes.dex -o ./dir-for-output // Декомпилировать файл DEX
+
+Пример я скидывал
