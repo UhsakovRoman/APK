@@ -1,4 +1,5 @@
 Установка:
+Должен быть установлен jdk
 Скачать скрипт, который находится ниже, в файл apktool
 Скачать apktool.jar https://bitbucket.org/iBotPeaches/apktool/downloads/
 Переименовать скачанный jar в apktool.jar
