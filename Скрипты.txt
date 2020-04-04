@@ -57,6 +57,7 @@ ls | while read i;
 	do cd $i;
 	dexdump -h classes.dex > header.txt;
 	dexdump -f classes.dex > header_summury_info.txt;
+	dexdump -g classes.dex > cfg_for_header.txt;
 	hexdump classes.dex > hexdump.txt;
 	androdd -i $i.apk -o ./source_code;
 	apktool d $i.apk;
