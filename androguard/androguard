@@ -1,4 +1,5 @@
 Установка:
+Должен быть установлен python
 sudo apt-get install androguard python-networkx
 
 Для чего используется:
