@@ -69,7 +69,6 @@ ls | while read i;
 	find -name "*.ag" | xargs rm;
 	find -empty -type d -delete;
 	find -name "*.java" | xargs cat > java.txt;
-	#rm -r source_code;
 	cd ..;
 done;
 
