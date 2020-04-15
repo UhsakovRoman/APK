@@ -68,7 +68,7 @@ ls | while read i;
 	rm -r $i;
 	find -name "*.ag" | xargs rm;
 	find -empty -type d -delete;
-	find -name "*.java" | xargs cat > java.txt;
+	find -name "*.java" | xargs cat > java_$i.txt;
 	cd ..;
 done;
 
