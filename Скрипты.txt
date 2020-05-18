@@ -16,7 +16,7 @@ mv $i ${i%%.apk}; // перемещаем апк в каталог i, его м�
 done 
 
 -----------
-2. Выполняем 2-ой скрипт, опять в том же каталоге test || Это работает
+2. Выполняем 2-ой скрипт, опять в том же каталоге test
 ls | while read i;do cd $i; dexdump -h classes.dex > header.txt; dexdump -f classes.dex > header_summury_info.txt; hexdump classes.dex > hexdump.txt; androdd -i $i.apk -o ./$i;  cd ..; done; // Надо отдельно применить апктул, так как андроидманифеста нет еще.
 
 ls | // Опять выводим список
@@ -32,27 +32,7 @@ cd ..; // Возвращаемся на один каталог выше, пер
 done; //
 
 -------------
-3. Теперь внутри папки автора нужно удалить все файлы *.ag
-find -name "*.ag" | xargs rm // Удаляет все файлы *.ag из всех каталогов глубже текущего
-find -empty -type d -delete // Удаляет пустые папки из всех каталогов глубже текущего
-find - name "*.java" | xargs cp -t ./java // Копирует (не перемещает) все *.java файлы в папку java (находится рядом со всеми апк автора)
-find - name "*.java" | xargs cat > java.txt // Создает файл java.txt - в нем объеденены все файлы *.java для всех апк глубже текущего каталога (сейчас создан файл со всеми java для одного автора)
-
--------------
-По-хорошему, надо все объединить в один скрипт
-
-ls | while read j; do cd $j; ls | while read i;do cd $i; dexdump -h classes.dex > header.txt; dexdump -f classes.dex > header_summury_info.txt; hexdump classes.dex > hexdump.txt; androdd -i $i.apk -o ./$i;  cd ..; done; cd .. done;
-
-cd home/roman/authors/; ls | while read j; do cd $j; ls | while read i;do cd $i; hexdump classes.dex > hexdump.txt; cd /home/roman/authors/$i ;done; cd /home/roman/authors done
-
-ls | while read j; do cd $j; ls | while read i;do cd $i; dexdump -h classes.dex > header.txt;  cd ..; done; cd .. done;
-
-
-
-ls | while read i;do cd $i; dexdump -h classes.dex > header.txt; dexdump -f classes.dex > header_summury_info.txt;apktool -d $i; androdd -i $i.apk -o ./$i;  cd ..; done;
-
-cd home/roman/authors/; ls | while read j; do cd $j; ls | while read i;do cd $i; dexdump -h classes.dex > header.txt; dexdump -f classes.dex > header_summury_info.txt; hexdump classes.dex > hexdump.txt; androdd -i $i.apk -o ./$i;  cd ..; done; cd .. done;
-
+Итого, скрипт №2:
 --------------
 Работает для одного автора:
 ls | while read i;
